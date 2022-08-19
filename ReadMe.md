@@ -1,14 +1,14 @@
 ### Basic Docker commands
 `docker run <image name>`  runs a container. Image will be downloaded from docker registry if not present on the machine
 
-`docker ps` `lists all running containers
+`docker ps` lists all running containers
 
 `docker ps -a` lists all containers (running or not running)
 
 
 `docker stop <container name or id>` stops running containers
 
-`docker rm <continaer name or id>` removes container
+`docker rm <container name or id>` removes container
 
 `docker images` lists all images
 
