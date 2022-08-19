@@ -1,10 +1,5 @@
-### Docker basic commands
-
-```
-docker run <image name>
-```
-
-runs a container. Image will be downloaded from docker registry if not present on the machine
+### Basic Docker commands
+`docker run <image name>`  runs a container. Image will be downloaded from docker registry if not present on the machine
 
 ```
 docker ps
