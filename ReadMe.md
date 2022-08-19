@@ -1,55 +1,26 @@
 ### Basic Docker commands
 `docker run <image name>`  runs a container. Image will be downloaded from docker registry if not present on the machine
 
-```
-docker ps
-```
+`docker ps` `lists all running containers
 
-lists all running containers
+`docker ps -a` lists all containers (running or not running)
 
-```
-docker ps -a
-```
 
-lists all containers (running or not running)
+`docker stop <container name or id>` stops running containers
 
-```
-docker stop <container name or id>
-```
+`docker rm <continaer name or id>` removes container
 
-stops running containers
+`docker images` lists all images
 
-```
-docker rm <continaer name or id>
-```
+`docker rmi <image name>` remove downloaded image
 
-removes container
+`docker pull <image name>` pulls the image from registry, but does not start the container
 
-```
-docker images
-```
-
-lists all images
-
-```
-docker rmi <image name>
-```
-
-remove downloaded image
-
-```
-docker pull <image name>
-```
-
-pulls the image from registry, but does not start the container
-
-```
-docker exec <container name> <command>
-```
-
-runs a command on running container
+`docker run <image name> <command>`runs a command on running container
 
 ### Running a container
+
+to run a container use `docker run <image name>` command. This runs the container in attached mode and you will see the results in coonsole (i.e. you will not be able to use the console anymore). Use `-d` option to run the container in detached mode.
 
 Containers are meant to run a specific task or process. Once the task is complete, the container exits.
 Docker container only lives for the duration of the task running inside it.
