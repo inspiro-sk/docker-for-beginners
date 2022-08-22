@@ -24,3 +24,22 @@ to run a container use `docker run <image name>` command. This runs the containe
 
 Containers are meant to run a specific task or process. Once the task is complete, the container exits.
 Docker container only lives for the duration of the task running inside it.
+
+
+### Dockerfile example
+
+```
+FROM <base image>
+
+RUN <command to run>
+
+WORKDIR <set working directory on container>
+
+COPY <what> <where>
+
+# define basic command to be executed on containers
+ENTRYPOINT <command>
+
+# define additional commands to be passed in / after ENTRYPOINT command
+CMD ["<command>", "<parameters>"]
+```
